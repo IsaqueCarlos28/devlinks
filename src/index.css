@@ -52,6 +52,7 @@ body {
 
 [data-theme='dark'] body {
   background-image: url('./assets/bg-mobile-dark.png');
+  background-color: #121214;
 }
 
 @media (min-width: 768px) {
