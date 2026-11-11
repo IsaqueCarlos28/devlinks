@@ -105,6 +105,8 @@ as telas do Figma do DevLinks (Linktree-inspired): avatar, username, botões de 
 - [x] Task 7.2a: Aplicar CSS das frames **Desktop Dark** e **Desktop Light** recebidas
       (fundo #121214/#FFFFFF, avatar com borda 2px stroke, `@seu.perfil` weight 400,
       switch com track+knob e position por tema, blur 4px nos botões, knob light/dark).
+- [x] Task 7.2b: Aplicar CSS das frames **Mobile** (Dark e Light): bg, avatar, username
+      (weight 500 no mobile), switch, links com largura 312px e blur 4px.
 - [ ] Task 7.3 (pendente): revisar `focus-visible` explícito e `prefers-reduced-motion` (hoje há apenas a transição de 150ms).
 
 ### Fase 8 — Documentação ⏳
