@@ -48,6 +48,9 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: fixed;
+
+  /* Cor de fundo da frame light desktop (Figma: frame background #FFFFFF) */
+  background-color: #ffffff;
 }
 
 [data-theme='dark'] body {
