@@ -16,7 +16,7 @@ export function Profile({ profile, theme }: ProfileProps) {
         alt={profile.avatarAlt}
         className="size-28 rounded-full border-2 border-stroke"
       />
-      <p className="mt-2 text-md font-normal">{profile.username}</p>
+      <p className="mt-2 text-md font-medium">{profile.username}</p>
     </header>
   )
 }
