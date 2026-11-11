@@ -14,7 +14,7 @@ export function SocialLinks({ links }: SocialLinksProps) {
             target="_blank"
             rel="noopener noreferrer"
             aria-label={link.ariaLabel}
-            className="flex size-10 items-center justify-center rounded-lg border border-stroke bg-surface transition-colors hover:bg-surface-hover"
+            className="flex size-10 items-center justify-center rounded-lg border border-stroke bg-surface transition-colors hover:bg-highlight"
           >
             <ion-icon name={link.icon} aria-hidden="true" className="text-2xl" />
           </a>
