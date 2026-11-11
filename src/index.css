@@ -1,0 +1,65 @@
+@import 'tailwindcss';
+
+/* Escalas de texto do Style Guide (Inter): 16/24 Medium e 14/24 Regular */
+@theme {
+  --text-md: 1rem;
+  --text-md--line-height: 1.5rem;
+  --text-sm: 0.875rem;
+  --text-sm--line-height: 1.5rem;
+}
+
+/* Expõe os tokens CSS como cores do Tailwind (text-, bg-, border-...) */
+@theme inline {
+  --color-text: var(--text-color);
+  --color-stroke: var(--stroke-color);
+  --color-surface: var(--surface-color);
+  --color-surface-hover: var(--surface-color-hover);
+  --color-highlight: var(--highlight-color);
+}
+
+:root {
+  /* Light mode (padrão) */
+  --text-color: #000000;
+  --stroke-color: rgb(0 0 0 / 50%);
+  --surface-color: rgb(0 0 0 / 5%);
+  --surface-color-hover: rgb(0 0 0 / 2%);
+  --highlight-color: rgb(0 0 0 / 10%);
+
+  font-family: 'Inter', Arial, sans-serif;
+  color: var(--text-color);
+}
+
+[data-theme='dark'] {
+  --text-color: #ffffff;
+  --stroke-color: rgb(255 255 255 / 50%);
+  --surface-color: rgb(255 255 255 / 10%);
+  --surface-color-hover: rgb(255 255 255 / 5%);
+  --highlight-color: rgb(255 255 255 / 20%);
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  -webkit-font-smoothing: antialiased;
+
+  /* Fundo exportado do Figma: versão mobile/light por padrão */
+  background-image: url('./assets/bg-mobile-light.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+[data-theme='dark'] body {
+  background-image: url('./assets/bg-mobile-dark.png');
+}
+
+@media (min-width: 768px) {
+  body {
+    background-image: url('./assets/bg-desktop-light.png');
+  }
+
+  [data-theme='dark'] body {
+    background-image: url('./assets/bg-desktop-dark.png');
+  }
+}
