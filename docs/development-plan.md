@@ -102,6 +102,9 @@ as telas do Figma do DevLinks (Linktree-inspired): avatar, username, botões de 
 ### Fase 7 — Polimento, acessibilidade e validação ✅ (com ressalvas)
 - [x] Task 7.1: Estados hover (`surface-hover`), `aria-pressed`/`aria-label`/`aria-hidden`.
 - [x] Task 7.2: Validação com browser tools + `tsc`, `build`, `lint` — todos sem erros.
+- [x] Task 7.2a: Aplicar CSS das frames **Desktop Dark** e **Desktop Light** recebidas
+      (fundo #121214/#FFFFFF, avatar com borda 2px stroke, `@seu.perfil` weight 400,
+      switch com track+knob e position por tema, blur 4px nos botões, knob light/dark).
 - [ ] Task 7.3 (pendente): revisar `focus-visible` explícito e `prefers-reduced-motion` (hoje há apenas a transição de 150ms).
 
 ### Fase 8 — Documentação ⏳
@@ -174,6 +177,7 @@ docs/                  # este plano
 5. Versionamento — o diretório não é um repositório git: definir `git init` + commit inicial e branches por tarefa.
 6. Task 7.3: `focus-visible` e `prefers-reduced-motion` (revisão final de acessibilidade).
 7. Task 8.1: README e screenshots desktop/mobile.
+8. Frames **Mobile** (light/dark) ainda não recebidas/comparadas.
 
 ## 12. Próximos passos
 
