@@ -109,6 +109,8 @@ as telas do Figma do DevLinks (Linktree-inspired): avatar, username, botões de 
       (weight 500 no mobile), switch, links com largura 312px e blur 4px.
 - [x] Task 7.3 (parcial): hover dos botões ajustado para borda 1.5px + hover dos ícones
       sociais ajustado para `highlight-color` (conforme CSS enviada dos componentes).
+- [x] Task 7.3 (cont.): knob do switch ajustado para cor sólida `#FFFFFF` (frame), sem
+      opacidade, com shadow e position por tema.
 
 ### Fase 8 — Documentação ⏳
 - [ ] Task 8.1: README (install/run/technologies) e screenshots desktop/mobile.
