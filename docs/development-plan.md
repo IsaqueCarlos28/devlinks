@@ -111,6 +111,8 @@ as telas do Figma do DevLinks (Linktree-inspired): avatar, username, botões de 
       sociais ajustado para `highlight-color` (conforme CSS enviada dos componentes).
 - [x] Task 7.3 (cont.): knob do switch ajustado para cor sólida `#FFFFFF` (frame), sem
       opacidade, com shadow e position por tema.
+- [x] Task 7.3 (cont.): ícones do switch (MoonStars/Sun) com `weight="regular"` (traço de
+      1px) e cor `#000000` — na frame o traço é `text-color-light-mode` sobre o knob branco.
 
 ### Fase 8 — Documentação ⏳
 - [ ] Task 8.1: README (install/run/technologies) e screenshots desktop/mobile.
