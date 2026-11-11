@@ -21,10 +21,8 @@ export function ThemeToggle({ theme, onToggle }: ThemeToggleProps) {
       <span className="absolute left-0 top-2 h-6 w-16 rounded-full border border-stroke bg-surface backdrop-blur-[4px]" />
       {/* Knob (32x32, topo em 4px, centralizado verticalmente) */}
       <span
-        className={`absolute left-0 top-1/2 flex size-8 -translate-y-1/2 items-center justify-center rounded-full bg-[#FFFFFF] transition-transform focus-visible:outline-2 focus-visible:outline-offset-2 ${
-          isDark
-            ? 'translate-x-0 shadow-[0_2px_8px_rgba(0,0,0,0.25)]'
-            : 'translate-x-8 shadow-[0_2px_8px_rgba(0,0,0,0.1)]'
+        className={`absolute left-0 top-1/2 flex size-8 -translate-y-1/2 items-center justify-center rounded-full bg-[#FFFFFF] transition-transform focus-visible:outline-2 focus-visible:outline-offset-2 hover:shadow-[0_2px_8px_rgba(0,0,0,0.1)] ${
+          isDark ? 'translate-x-0 shadow-[0_2px_8px_rgba(0,0,0,0.25)]' : 'translate-x-8 shadow-[0_2px_8px_rgba(0,0,0,0.1)]'
         }`}
       >
         {isDark ? (
