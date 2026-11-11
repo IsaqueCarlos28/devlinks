@@ -25,10 +25,13 @@ export function ThemeToggle({ theme, onToggle }: ThemeToggleProps) {
           isDark ? 'translate-x-0 shadow-[0_2px_8px_rgba(0,0,0,0.25)]' : 'translate-x-8 shadow-[0_2px_8px_rgba(0,0,0,0.1)]'
         }`}
       >
+        {/* Ícones 16x16 com traço de 1px (weight "regular"), na cor #000000
+            definida na frame: o knob é branco (#FFFFFF) nos dois temas e o
+            traço do MoonStars/Sun é "text-color-light-mode". */}
         {isDark ? (
-          <MoonStars size={16} aria-hidden="true" />
+          <MoonStars size={16} weight="regular" color="#000000" aria-hidden="true" />
         ) : (
-          <Sun size={16} aria-hidden="true" />
+          <Sun size={16} weight="regular" color="#000000" aria-hidden="true" />
         )}
       </span>
     </button>
